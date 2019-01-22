@@ -7,11 +7,24 @@
 </head>
 
 <body>
-	<div id="app"></div>
-	<h1><b> Hello! </b></h1>
+
+	<div id="app">My name is {{name}}. Here's my message: 
+		<br> <br>
+		<h2>
+		<b> {{message}} </b></div>
+		</h2>
+	
 	<br><br>
 	This is <i><b> Bixuan's </b></i> Sandbox.
-	<!-- <script src="src/index.js"> -->
+	<script src = "https://unpkg.com/vue"></script>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data: {
+				name:"Bixuan",
+				message:"Hi there!"
+			}
+		});
 	</script>
 </body>
 
